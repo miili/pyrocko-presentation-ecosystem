@@ -1,0 +1,16 @@
+img.logo {
+    background-color: #fff !important;
+    max-height: 100px;
+    max-width: 200px;
+    border: none !important;
+}
+
+div.logo {
+    background-color: #fff !important;
+    width: 100%;
+}
+
+p.subtitle {
+    font-size: 60%;
+    opacity: .5;
+}
