@@ -1,6 +1,6 @@
 img.snuffler-front {
     border: none !important;
-    background-color: rgba(0,0,0,0) !important;
+    background-color: rgba(255,255,255,0) !important;
     margin: 0px;
     height: 80px;
 }
@@ -10,9 +10,9 @@ div.logos {
     bottom: 0px;
     background-color: #fff !important;
     width: 100%;
-    -webkit-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.9);
+    -moz-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.9);
 }
 
 div.logos img {
@@ -31,11 +31,18 @@ p.subtitle {
     opacity: .5;
 }
 
-cite {
-    font-size: 60%;
-    font-family: serif;
+div.overl {
+    background-color: rgba(0, 0, 0, .7);
 }
 
-b {
-    font-weight: 500;
+ul.datasets li span {
+    font-size: 50%;
+    opacity: .5;
+    display: block;
+}
+
+img {
+    margin: 0px;
+    border: none !important;
+    box-shadow: 1px 1px 7px rgba(0 ,0 ,0 ,.8) !important;
 }
