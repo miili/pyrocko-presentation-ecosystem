@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Pyrocko Ecosystem</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/night.css">
@@ -26,18 +26,117 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
+				<section id='frontpage'>
 					<h2>The Pyrocko Ecosystem</h2>
+					<img class='snuffler-front' data-src='img/logos/flag-black.svg'>
 					<h4>Software for Seismology</h4>
 					<p class='subtitle'><b>Marius Isken</b>, Sebastian Heimann, Henriette Sudhaus, Marius Kriegerowski, Hannes Vasyura-Bathke, Simon Daouts, Andreas Steinberg<p>
-					<div class='logo'>
-						<img data-src='img/logos/cau.svg' class='logo'>
-						<img data-src='img/logos/gfz.svg' class='logo'>
-						<img data-src='img/logos/uhh.svg' class='logo'>
-						<img data-src='img/logos/dfg.svg' class='logo'>
+					<div class='logos'>
+						<img data-src='img/logos/gfz.svg'>
+						<img data-src='img/logos/cau.svg'>
+						<img data-src='img/logos/uhh.svg'>
+						<img data-src='img/logos/dfg.svg'>
 					</div>
 				</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Overview</h2>
+				</section>
+				<section>
+					<section>
+						<h2>What is Pyrocko?</h2>
+					</section>
+					<section>
+						<h2>Managing Data (I/O)</h2>
+						<p>Exploring with the Snuffler</p>
+					</section>
+					<section>
+						<h2>Geophysical Datasets</h2>
+						<p>Seamless auto downloading of various helpful datasets:</p>
+						<ul>
+							<li>Seismic Velocity Datasets
+								<ul>
+									<li>CRUST2.0 <span>Bassin et al., 2000</span></li>
+									<li>Global Crustal Database <span>Mooney et al., 1998</span></li>
+								</ul>
+							</li>
+							<li>
+								Topographic Datasets
+								<ul>
+									<li>SRTM3.0</li>
+									<li>ETOPO1</li>
+								</ul>
+							</li>
+							<li>
+								Tectonic data
+								<ul>
+									<li>Plate Boundaries <span>Peter Bird, 2003</span></li>
+									<li>Plate Motions <span>Kreemer et al., 2003</span></li>
+								</ul>
+							</li>
+							<li>
+								Geographical data
+								<ul>
+									<li>GSHHG Coastlines <span>Peter Bird, 2003</span></li>
+									<li>Geonames geographical database</li>
+								</ul>
+							</li>
+
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Forward Modelling</h2>
+						<p>Green's function databases</p>
+					</section>
+					<section>
+						<h2>Waveform modelling</h2>
+						<p>Numerical Backends</p>
+						<ul>
+							<li>AHFullGreen</li>
+							<li>QSEIS</li>
+							<li>QSSP</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Near-field modelling</h2>
+						<p>PSGRN/PSCMP</p>
+						<ul>
+							<li>Static displacements</li>
+							<li>Coulomb stress change</li>
+							<li>Gravity effects</li>
+							<li>Viscoelastic relaxation</li>
+							<li>Poroelastic rebound</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>InSAR Handling</h2>
+						<p>Kite software package</p>
+					</section>
+					<section>
+						<h2>Subsampling</h2>
+					</section>
+					<section>
+						<h2>Error estimation</h2>
+					</section>
+				</section>
+				<section>
+					<h2>Applications</h2>
+					<p>Putting parts together</p>
+				</section>
+				<section>
+					<section>
+						<h2>Source Inversion</h2>
+					</section>
+					<section>
+						<h2>Grond</h2>
+					</section>
+					<section>
+						<h2>BEAT</h2>
+					</section>
+				</section>
 			</div>
 		</div>
 

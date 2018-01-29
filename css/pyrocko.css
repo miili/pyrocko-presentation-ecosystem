@@ -1,16 +1,41 @@
-img.logo {
-    background-color: #fff !important;
-    max-height: 100px;
-    max-width: 200px;
+img.snuffler-front {
     border: none !important;
+    background-color: rgba(0,0,0,0) !important;
+    margin: 0px;
+    height: 80px;
 }
 
-div.logo {
+div.logos {
+    position: fixed;
+    bottom: 0px;
     background-color: #fff !important;
     width: 100%;
+    -webkit-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.75);
+}
+
+div.logos img {
+    background-color: #fff !important;
+    max-height: 45px;
+    max-width: 250px;
+    border: none !important;
+    margin: 12px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 p.subtitle {
     font-size: 60%;
     opacity: .5;
+}
+
+cite {
+    font-size: 60%;
+    font-family: serif;
+}
+
+b {
+    font-weight: 500;
 }
