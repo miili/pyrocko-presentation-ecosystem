@@ -32,7 +32,7 @@ p.subtitle {
 }
 
 div.overl {
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .8);
 }
 
 ul.datasets li span {
@@ -45,4 +45,11 @@ img {
     margin: 0px;
     border: none !important;
     box-shadow: 1px 1px 7px rgba(0 ,0 ,0 ,.8) !important;
+}
+
+img.snuffler-small {
+    background-color: rgba(255,255,255,0) !important;
+    height: .9em;
+    margin: 0px !important;
+    box-shadow: none !important;
 }

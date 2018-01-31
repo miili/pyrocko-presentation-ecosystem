@@ -44,7 +44,6 @@
 						<p>A Python framework for geophysicists.</p>
 						<pre><code class="hljs" data-trim>
 							import pyrocko
-							pyrocko.load('waveforms.mseed')
 						</code></pre>
 					</div>
 					<p class="fragment fade-in">Software building blocks for seismological research.</p>
@@ -53,7 +52,59 @@
 					<section data-background-image='img/forest.jpg'>
 						<div class="overl">
 							<h2>Managing Data (I/O)</h2>
-							<p>Exploring data with the Snuffler</p>
+							<p>Seismological waveforms</p>
+						</div>
+					</section>
+					<section>
+						<h3>Reading data</h3>
+						<pre><code class="python" data-trim>
+							import pyrocko.io
+							trace = pyrocko.io.load('waveforms.mseed')
+						</code></pre>
+						<div class="fragment">
+							<h3>Basic Signal Processing</h3>
+							<pre><code class="python" data-trim>
+								trace.highpass(5)
+								trace.lowpass(10)
+								trace.detrend('linear')
+								trace.decimate(10)
+							</code></pre>
+						</div>
+					</section>
+					<section>
+						<h2>Exploring data</h2>
+						<p>with the Snuffler <img data-src='img/logos/flag-black.svg' class="snuffler-small"> User Interface</p>
+						<pre><code class="python" data-trim>
+							trace.snuffle()
+						</code></pre>
+						<video class="fragment" data-src="img/snuffler-1.mp4" type="video/mp4" data-autoplay>
+						</video>
+					</section>
+					<section>
+						<h2>Plugins to Snuffler</h2>
+						<h4>Called <i>Snufflings</i></h4>
+					</section>
+					<section>
+						<h2>Compatible with ObsPy</h2>
+						Use your existing ObsPy scripts with Pyrocko!
+						<pre><code class="python" data-trim>
+							import obspy
+							from pyrocko import obspy_compat
+							obspy_compat.plant()
+
+							# Read in MiniSEED data through ObsPy
+							stream = obspy.read('test.mseed')
+
+							# Start the Snuffler
+							stream.snuffle()
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<section data-background-image='img/library-1.jpg'>
+						<div class='overl'>
+							<h2>Datasets</h2>
+							<p>Access online resources</p>
 						</div>
 					</section>
 					<section>
@@ -96,9 +147,11 @@
 					</section>
 				</section>
 				<section>
-					<section>
-						<h2>Forward Modelling</h2>
-						<p>Green's function databases</p>
+					<section data-background-image="img/analogue-modelling.jpg">
+						<div class="overl">
+							<h2>Forward Modelling</h2>
+							<p>Green's function databases</p>
+						</div>
 					</section>
 					<section>
 						<h2>Waveform modelling</h2>
@@ -148,9 +201,7 @@
 					</section>
 					<section>
 						<h2>BEAT</h2>
-						<p>Bayesian Earthquake Analysis Tool
-
-</p>
+						<p>Bayesian Earthquake Analysis Tool</p>
 					</section>
 				</section>
 				<section>
