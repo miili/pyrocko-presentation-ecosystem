@@ -46,7 +46,13 @@
 							import pyrocko
 						</code></pre>
 					</div>
-					<p class="fragment fade-in">Software building blocks for seismological research.</p>
+					<p class="fragment">Software building blocks for seismological research.</p>
+					<ul class="fragment">
+						<li>Waveform handling</li>
+						<li>Forward modelling</li>
+						<li>InSAR surface displacement</li>
+						<li>Applications</li>
+					</ul>
 				</section>
 				<section>
 					<section data-background-image='img/forest.jpg'>
@@ -77,7 +83,7 @@
 						<pre><code class="python" data-trim>
 							trace.snuffle()
 						</code></pre>
-						<video class="fragment" data-src="img/snuffler-1.mp4" type="video/mp4" data-autoplay>
+						<video class="fragment" data-src="http://data.pyrocko.org/material/snuffler-video.mp4" type="video/mp4" data-autoplay>
 						</video>
 					</section>
 					<section>
@@ -104,46 +110,50 @@
 					<section data-background-image='img/library-1.jpg'>
 						<div class='overl'>
 							<h2>Datasets</h2>
-							<p>Access online resources</p>
+							<p>Access online resources (seamless)</p>
 						</div>
 					</section>
 					<section>
 						<h3>Seismic Velocity datasets</h3>
-						<ul class="datasets">
-							<li>CRUST2.0 <span>Bassin et al., 2000</span></li>
-							<li>Global Crustal Database <span>Mooney et al., 1998</span></li>
-						</ul>
-					</section>
-					<section>
-						<h3>Topographic datasets</h3>
-
-						<ul class="datasets">
-							<li>SRTM3.0</li>
-							<li>ETOPO1</li>
-							<li class="fragment" data-fragment-index="1">
-								Plate Boundaries
-								<span>Peter Bird, 2003</span></li>
-							<li class="fragment" data-fragment-index="1">
-								Plate Motions
-								<span>Kreemer et al., 2003</span></li>
-							<li class="fragment" data-fragment-index="2">
-								GSHHG Coastlines
-								<span>Wessel et al., 1996</span></li>
-							<li class="fragment" data-fragment-index="2">
-								Geonames
+						<ul class="subtitled">
+							<li>
+								CRUST2.0
+								<span>Bassin et al., 2000</span>
+							</li>
+							<li>
+								Global Crustal Database
+								<span>Mooney et al., 1998</span>
 							</li>
 						</ul>
-						<img data-src="img/new_zealand.png" width="50%">
 					</section>
 					<section>
-						<h3>Tectonic data</h3>
-						<ul class="datasets">
-						</ul>
-					</section>
-					<section>
-						<h3>Geographical data</h3>
-						<ul class="datasets">
-						</ul>
+						<h3>Geo datasets</h3>
+						<div style="vertical-align: top;">
+							<ul class="subtitled">
+								<li>
+									SRTM3.0
+									<span>Space Shuttle Radar Topographic Mission</span>
+								</li>
+								<li>
+									ETOPO1
+									<span>Global relief model</span>
+								</li>
+								<li class="fragment" data-fragment-index="1">
+									Plate Motions
+									<span>Kreemer et al., 2003</span></li>
+								<li class="fragment" data-fragment-index="1">
+									Plate Boundaries
+									<span>Peter Bird, 2003</span></li>
+								<li class="fragment" data-fragment-index="2">
+									GSHHG Coastlines
+									<span>Wessel et al., 1996</span></li>
+								<li class="fragment" data-fragment-index="2">
+									Geonames
+									<span>Cities and Population</span>
+								</li>
+							</ul>
+							<img data-src="img/new_zealand-edited.png" width="45%" style="background-color: transparent !important; box-shadow: none !important; filter: drop-shadow(0 0 2px rgba(255,255,255,.2)); padding: 20px;">
+						</div>
 					</section>
 				</section>
 				<section>
@@ -155,64 +165,100 @@
 					</section>
 					<section>
 						<h2>Waveform modelling</h2>
-						<p>Numerical Backends</p>
-						<ul>
-							<li>AHFullGreen</li>
-							<li>QSEIS</li>
-							<li>QSSP</li>
+						<ul class="subtitled">
+							<li>
+								AhFullGreen
+								<span>Homogeneous full space</span>
+							</li>
+							<li>
+								QSEIS
+								<span>Layered half-space</span>
+							</li>
+							<li>
+								QSSP
+								<span>Self-gravitating spherical earth (Wang et al. 2006)</span>
+							</li>
 						</ul>
+						<pre class="fragment"><code class="python" data-trim>
+							source = DCSource(moment=5.4, strike=20., dip=30., rake=32.)
+							target = WaveformTarget(lat=10.3, lon=22.3)
+							result = pyrocko.gf.seismoseizer(source, target)
+						</code></pre>
 					</section>
 					<section>
 						<h2>Near-field modelling</h2>
-						<p>PSGRN/PSCMP</p>
-						<ul>
-							<li>Static displacements</li>
-							<li>Coulomb stress change</li>
-							<li>Gravity effects</li>
-							<li>Viscoelastic relaxation</li>
-							<li>Poroelastic rebound</li>
+						<ul class="subtitled">
+							<li>
+								PSGRN/PSCMP
+								<span>Wang et al., 2009</span>
+							</li>
+							<ul style="font-size: 80%; opacity: .5">
+								<li>Static displacements</li>
+								<li>Coulomb stress change</li>
+								<li>Gravity effects</li>
+								<li>...</li>
+							</ul>
 						</ul>
+						<pre class="fragment"><code class="python" data-trim>
+							source = RectangularSource(moment=5.4, strike=20., dip=30., rake=32.)
+							target = StaticTarget(lats=[10.3, ...], lons=[22.3, ...])
+							result = pyrocko.gf.seismoseizer(source, target)
+						</code></pre>
 					</section>
 				</section>
 				<section>
-					<section>
-						<h2>InSAR Handling</h2>
-						<p>Kite software package</p>
+					<section data-background-image="img/surface-displacement-edited.png">
+						<div class="overl">
+							<h2>InSAR Handling</h2>
+							<p>Surface displacement data</p>
+						</div>
 					</section>
 					<section>
-						<h2>Subsampling</h2>
-						<p>Reducing InSAR displacement for modelling.</p>
+						<h2>Quadtree Subsampling</h2>
+						<p>Reducing resolution for modelling.</p>
 						<div>
 							<img class="insar" data-src="img/myanmar-full.png" />
 							<img class="insar" data-src="img/myanmar-quadtree.gif" />
 						</div>
 					</section>
 					<section>
-						<h2>Error estimation</h2>
+						<h2>Noise Covariance Estimation</h2>
+					</section>
+					<section>
+						<h2>Static Source Modelling</h2>
+						<p>Talpa</p>
 					</section>
 				</section>
 				<section>
-					<h2>Applications</h2>
-					<p>Putting parts together</p>
-				</section>
-				<section>
-					<section>
-						<h2>Source Inversion</h2>
+					<section data-background-image="img/applications.jpg">
+						<div class="overl">
+							<h2>Applications</h2>
+							<p>Putting parts together</p>
+						</div>
 					</section>
 					<section>
 						<h2>Grond</h2>
-						<p>Full waveform source inversion</p>
-						<p class="fragment">Geodetic data inclusion (InSAR and GNSS)</p>
+						<p>Full waveform source inversion, the beyesian </p>
+						<p class="fragment">Geodetic data (InSAR and GNSS)</p>
 					</section>
 					<section>
 						<h2>BEAT</h2>
 						<p>Bayesian Earthquake Analysis Tool</p>
 					</section>
+					<section>
+						<h2>Lassie</h2>
+						<p>The Earthquake Detector</p>
+						<img class="fragment" data-src="img/lassie_example.png" />
+					</section>
 				</section>
 				<section>
-					<h2>Lassie</h2>
-					<p>The Earthquake Detector</p>
-					<img class="fragment" data-src="img/lassie_example.png" />
+					<h2>Thank you!</h2>
+					<p>Software available on <b>pyrocko.org</b></p>
+					<img data-src="img/group-photo.jpg" />
+					<div style="position: fixed; bottom: 30px; right: 30px; width: 80px; height: 80px">
+						<img class="github" style="margin-bottom: 0px;" data-src="img/logos/Octocat.png" />
+						<img class="github" style="margin-top: 0px" data-src="img/logos/GitHub_Logo_White.png" />
+					</div>
 				</section>
 			</div>
 		</div>
@@ -232,6 +278,7 @@
 				touch: false,
 				history: true,  // Good for debuging purposes
 				slideNumber: true,
+				transition: 'none', // none/fade/slide/convex/concave/zoom
 /*				// Parallax background image
 				parallaxBackgroundImage: "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg",
 

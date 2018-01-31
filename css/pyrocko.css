@@ -35,7 +35,11 @@ div.overl {
     background-color: rgba(0, 0, 0, .8);
 }
 
-ul.datasets li span {
+ul {
+    list-style: square !important;
+}
+
+ul.subtitled li span {
     font-size: 50%;
     opacity: .5;
     display: block;
@@ -56,6 +60,12 @@ img.snuffler-small {
 
 img.insar {
     width: 45%;
+}
+
+img.github {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    filter: drop-shadow(0 0 1px rgba(255,255,255,.3));
 }
 
 .arrow_box {
