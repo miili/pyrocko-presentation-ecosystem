@@ -67,13 +67,15 @@
 							import pyrocko.io
 							trace = pyrocko.io.load('waveforms.mseed')
 						</code></pre>
-						<div class="fragment">
+						<span class="sub">Supported formats: MiniSEED / SEGY / SAC / GSE / SEISAN ...</span>
+						<div class="fragment" style="margin-top: 1em; ">
 							<h3>Basic Signal Processing</h3>
 							<pre><code class="python" data-trim>
 								trace.highpass(5)
 								trace.lowpass(10)
 								trace.detrend('linear')
 								trace.decimate(10)
+								...
 							</code></pre>
 						</div>
 					</section>
@@ -89,10 +91,16 @@
 					<section>
 						<h2>Plugins to Snuffler</h2>
 						<h4>Called <i>Snufflings</i></h4>
+						<img data-src="img/snuffling.png" style="height: 500px;"/>
 					</section>
+					<!-- <section>
+						<h2>Plugins to Snuffler</h2>
+						<h4>Called <i>Snufflings</i></h4>
+						<img data-src="img/snuffling.png" style="height: 500px;"/>
+					</section> -->
 					<section>
 						<h2>Compatible with ObsPy</h2>
-						Use your existing ObsPy scripts with Pyrocko!
+						Flavour existing ObsPy scripts with Pyrocko!
 						<pre><code class="python" data-trim>
 							import obspy
 							from pyrocko import obspy_compat
@@ -216,18 +224,31 @@
 					</section>
 					<section>
 						<h2>Quadtree Subsampling</h2>
-						<p>Reducing resolution for modelling.</p>
-						<div>
-							<img class="insar" data-src="img/myanmar-full.png" />
-							<img class="insar" data-src="img/myanmar-quadtree.gif" />
-						</div>
+						<p>Adaptive downsampling for modelling.</p>
+						<div style="display: inline-flex; vertical-align: middle;">
+								<div class="insar">
+									<img class="insar" data-src="img/myanmar-full.png" />
+								</div>
+								<div class="arrow-right"></div>
+								<div class="insar">
+									<img class="insar" data-src="img/myanmar-quadtree.gif" />
+								</div>
 					</section>
 					<section>
 						<h2>Noise Covariance Estimation</h2>
-					</section>
-					<section>
-						<h2>Static Source Modelling</h2>
-						<p>Talpa</p>
+						<div style="display: inline-flex; vertical-align: middle;">
+							<div class="insar-covariance">
+								<img class="insar" data-src="img/myanmar-noise.png"/>
+							</div>
+							<div class="arrow-right"></div>
+							<div class="insar-covariance">
+								<img class="insar" data-src="img/myanmar-powerspec.svg" />
+							</div>
+							<div class="arrow-right"></div>
+							<div class="insar-covariance">
+								<img class="insar" data-src="img/myanmar-covariance.svg" />
+							</div>
+						</div>
 					</section>
 				</section>
 				<section>
@@ -247,19 +268,52 @@
 						<p>Bayesian Earthquake Analysis Tool</p>
 					</section>
 					<section>
+						<h2>Static Source Modelling</h2>
+						<p>Talpa</p>
+					</section>
+					<section>
 						<h2>Lassie</h2>
 						<p>The Earthquake Detector</p>
 						<img class="fragment" data-src="img/lassie_example.png" />
 					</section>
 				</section>
 				<section>
-					<h2>Thank you!</h2>
-					<p>Software available on <b>pyrocko.org</b></p>
-					<img data-src="img/group-photo.jpg" />
-					<div style="position: fixed; bottom: 30px; right: 30px; width: 80px; height: 80px">
-						<img class="github" style="margin-bottom: 0px;" data-src="img/logos/Octocat.png" />
-						<img class="github" style="margin-top: 0px" data-src="img/logos/GitHub_Logo_White.png" />
-					</div>
+					<section>
+						<h2>Contributors</h2>
+						<div>
+							<div style="width: 50%; white-space: pre-line; float: left;">
+								Sebastian Heimann
+								Marius Kriegerowski
+								Marius Isken
+								Hannes Bathke
+								Simone Cesca
+								Torsten Dahm
+								Simon Daout
+								Francesco Grigoli
+								Carina Juretzek
+							</div>
+							<div style="width: 50%; white-space: pre-line; float: left;">
+								Henning Lilienkamp
+								Daniela Kühn
+								Richard McGraw
+								Tobias Megies
+								Nima Nooshiri
+								Gesa Petersen
+								Andreas Steinberg
+								Henriette Sudhaus
+								Timothy Willey
+							</div>
+						</div>
+					</section>
+					<section>
+						<h2>Thank you!</h2>
+						<p>Software available on <b>pyrocko.org</b></p>
+						<img data-src="img/group-photo.jpg" />
+						<div style="position: fixed; bottom: 30px; right: 30px; width: 80px; height: 80px">
+							<img class="github" style="margin-bottom: 0px;" data-src="img/logos/Octocat.png" />
+							<img class="github" style="margin-top: 0px" data-src="img/logos/GitHub_Logo_White.png" />
+						</div>
+					</section>
 				</section>
 			</div>
 		</div>

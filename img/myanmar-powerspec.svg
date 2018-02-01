@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   height="461.98679"
+   width="635.25195"
+   id="svg144"
+   version="1.2">
+  <metadata
+     id="metadata148">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>pyqtgraph SVG export</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <title
+     id="title2">pyqtgraph SVG export</title>
+  <desc
+     id="desc4">Generated with Qt and pyqtgraph</desc>
+  <defs
+     id="defs6" />
+  <g
+     transform="translate(-43.748047,-0.5)"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+     id="PlotItem_1">
+    <g
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+       id="AxisItem_1">
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+         id="g10"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline8"
+           points="63.2,445.8 678.0,445.8" />
+      </g>
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:0.49803904"
+         id="g14"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline12"
+           points="162.6491,1.0 162.6491,445.8" />
+      </g>
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:0.247059"
+         id="g18"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline16"
+           points="421.924,1.0 421.924,445.8" />
+      </g>
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:0.164706"
+         id="g66"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline20"
+           points="84.5994,1.0 84.5994,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline22"
+           points="105.1292,1.0 105.1292,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline24"
+           points="122.4868,1.0 122.4868,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline26"
+           points="137.5227,1.0 137.5227,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline28"
+           points="150.7853,1.0 150.7853,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline30"
+           points="162.6491,1.0 162.6491,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline32"
+           points="240.699,1.0 240.699,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline34"
+           points="286.355,1.0 286.355,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline36"
+           points="318.748,1.0 318.748,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline38"
+           points="343.875,1.0 343.875,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline40"
+           points="364.404,1.0 364.404,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline42"
+           points="381.762,1.0 381.762,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline44"
+           points="396.798,1.0 396.798,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline46"
+           points="410.061,1.0 410.061,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline48"
+           points="421.924,1.0 421.924,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline50"
+           points="499.974,1.0 499.974,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline52"
+           points="545.63,1.0 545.63,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline54"
+           points="578.024,1.0 578.024,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline56"
+           points="603.15,1.0 603.15,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline58"
+           points="623.68,1.0 623.68,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline60"
+           points="641.037,1.0 641.037,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline62"
+           points="656.073,1.0 656.073,445.8" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline64"
+           points="669.336,1.0 669.336,445.8" />
+      </g>
+      <g
+         transform="translate(0,-22)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+         id="QGraphicsTextItem_1">
+        <g
+           style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+           id="g76"
+           transform="translate(285.2,465.8)"
+           font-weight="400"
+           font-style="normal"
+           font-size="12.9167">
+          <text
+             style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans, sans-serif;fill:#969696;fill-opacity:1;stroke:none"
+             id="text74"
+             y="16"
+             xml:space="preserve"
+             x="4"
+             font-weight="400"
+             font-style="normal"
+             font-size="12.9167">Wavenumber (cycles/m) </text>
+        </g>
+      </g>
+    </g>
+    <g
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+       id="AxisItem_2">
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+         id="g82"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline80"
+           points="63.2,1.0 63.2,445.8" />
+      </g>
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:0.49803904"
+         id="g86"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline84"
+           points="678.5,345.984 63.7,345.984" />
+      </g>
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:0.247059"
+         id="g92"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline88"
+           points="678.5,204.449 63.7,204.449" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline90"
+           points="678.5,62.9139 63.7,62.9139" />
+      </g>
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:0.164706"
+         id="g100"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline94"
+           points="678.5,416.752 63.7,416.752" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline96"
+           points="678.5,275.217 63.7,275.217" />
+        <polyline
+           style="vector-effect:non-scaling-stroke;fill:none"
+           id="polyline98"
+           points="678.5,133.682 63.7,133.682" />
+      </g>
+      <g
+         transform="translate(42)"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+         id="QGraphicsTextItem_2">
+        <g
+           style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#969696;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1"
+           id="g122"
+           transform="rotate(-90,130.5,134.5)"
+           font-weight="400"
+           font-style="normal"
+           font-size="12.9167">
+          <text
+             style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans, sans-serif;fill:#969696;fill-opacity:1;stroke:none"
+             id="text116"
+             y="16"
+             xml:space="preserve"
+             x="4"
+             font-weight="400"
+             font-style="normal"
+             font-size="12.9167">Power (m</text>
+          <text
+             style="font-style:normal;font-weight:400;font-size:7.75px;font-family:Sans, sans-serif;fill:#969696;fill-opacity:1;stroke:none"
+             id="text118"
+             y="11.5"
+             xml:space="preserve"
+             x="66"
+             font-weight="400"
+             font-style="normal"
+             font-size="7.75">2</text>
+          <text
+             style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans, sans-serif;fill:#969696;fill-opacity:1;stroke:none"
+             id="text120"
+             y="16"
+             xml:space="preserve"
+             x="71"
+             font-weight="400"
+             font-style="normal"
+             font-size="12.9167">) </text>
+        </g>
+      </g>
+    </g>
+    <g
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+       id="ViewBox_1">
+      <g
+         style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:none"
+         id="g128"
+         font-weight="400"
+         font-style="normal"
+         font-size="12.9167">
+        <path
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd"
+           id="path126"
+           d="M 63.2,1 H 678 V 445.8 H 63.2 V 1" />
+      </g>
+      <clipPath
+         id="ViewBox_1_clip">
+        <path
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd"
+           id="path130"
+           d="M 63.2,1 H 678 V 445.8 H 63.2 V 1" />
+      </clipPath>
+      <g
+         id="g140"
+         clip-path="url(#ViewBox_1_clip)">
+        <g
+           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel"
+           id="ChildGroup_1">
+          <g
+             style="stroke:#ffffff;stroke-width:3.0999999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             id="PlotDataItem_1">
+            <g
+               style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.0999999;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="PlotCurveItem_1">
+              <g
+                 style="font-style:normal;font-weight:400;font-size:12.91670036px;font-family:Sans;fill:none;stroke:#ffffff;stroke-width:3.0999999;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 id="g135"
+                 font-weight="400"
+                 font-style="normal"
+                 font-size="12.9167">
+                <path
+                   style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.0999999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   id="path133"
+                   d="m 86.799499,22.509546 29.591061,-1.602178 23.41253,6.031523 19.37303,11.524503 16.52359,12.256949 14.40532,19.027992 12.76929,28.302086 11.47033,27.461369 10.4073,-3.15836 9.52576,-10.6944 8.78424,2.72455 8.14642,3.71106 7.59676,5.59205 7.1171,6.76609 6.69448,6.37333 6.31853,5.23185 5.98147,5.34791 5.68072,3.84339 5.40588,-2.05722 5.15957,-1.25329 4.93401,2.4896 4.72658,6.82625 4.53731,9.20261 4.36101,10.13746 4.19766,5.12499 4.04728,-1.254 3.90469,-0.59657 3.77504,4.68128 3.65318,7.3018 3.53911,6.37899 3.43021,0.95041 3.32909,5.33375 3.23316,-0.43663 3.14241,-3.81579 3.05944,-5.52271 2.97648,-2.18601 2.90129,3.38765 2.8261,3.15835 2.75868,7.81133 2.69128,2.75994 2.62904,2.60566 2.56942,5.83762 2.51237,2.64317 2.45793,-3.19799 2.40348,-2.59504 2.35681,-5.49723 2.30496,-2.32189 2.26087,5.65363 2.21421,10.45591 2.17273,9.05613 2.13124,5.76048 2.09235,-2.62052 2.05345,-2.61274 2.01716,-0.69777 1.98086,-3.07202 1.94975,-4.03588 1.91345,3.00621 1.88234,2.35939 1.85122,3.37774 1.82011,3.89929 1.79159,3.79032 1.76567,1.37713 1.73714,-2.37637 1.71121,-1.72461 1.6827,0.38781 1.66195,1.08203 1.63603,2.08765 1.61269,3.01258 1.58935,-2.62619 1.56862,-3.87311 1.54527,-3.59924 1.52454,2.09118 1.50639,3.58367 1.48305,4.06631 1.4675,6.06195 1.44675,7.01449 1.42861,-3.3643 1.41045,0.27883 1.39231,-5.09668 1.37675,-1.30991 1.3586,0.08 1.34305,2.98356 1.32749,0.97517 1.31193,3.06636 1.29637,3.19587 1.28341,3.21285 1.26786,-6.46958 1.2523,-4.01464 1.23933,-0.91856 1.22637,1.6227 1.21341,8.03566 1.20044,3.43223 1.18748,-2.31623 1.17452,-2.35302 1.16414,-0.67512 1.15118,1.32052 1.13822,0.0439 1.12785,-1.31416 1.11747,-2.52499 1.10711,3.17676 1.09414,-0.30855 1.08377,3.13572 1.07599,0.52155 1.06302,1.05303 1.05266,0.40337 1.04488,0.89592 1.03451,0.62842 1.02673,-3.13289 1.01635,-2.416 1.00599,-1.28373 0.99821,1.14715 0.98784,3.4761 0.98265,0.40975 0.97228,3.91415 0.96191,1.3736 0.95673,-1.85623 0.94635,-2.62407 0.94117,-1.01268 0.93079,1.48895 0.92562,1.00773 0.91524,2.88236 0.91005,-0.33756 0.90228,-4.15193 0.8945,-4.1484 0.88931,0.26892 0.87894,3.75634 0.87376,1.35874 0.86857,5.31535 0.86079,0.4423 0.85302,0.68786 0.84783,-0.24698 0.84264,1.84209 0.83487,2.05226 0.82968,1.52645 0.8219,-0.66309 0.81672,-1.19739 0.81153,-2.8951 0.80634,2.75711 0.79857,-1.71258 0.79338,-2.33108 0.7882,-1.47268 0.78301,0.74094 0.77782,1.65879 0.77264,1.95743 0.76746,2.54693 0.76226,1.08062 0.75449,1.77839 0.7519,-1.52292 0.74671,1.6595 0.74153,-0.29581 0.73634,0.28024 0.73375,-1.22782 0.72597,-1.54839 0.72338,0.25405 0.71819,-2.92553 0.713,-0.27033 0.71042,1.67295 0.70263,4.10876 0.70005,6.33441 0.69745,3.30485 0.68967,-2.81797 0.68708,-3.74007 0.68448,0.35597 0.6793,-3.75776 0.67412,-0.25689 0.67152,-0.53288 0.66634,-0.78552 0.66374,1.39341 0.65856,0.48405 0.65596,0.90158 0.65078,2.59647 0.64819,-0.50599 0.643,0.35879 0.64041,-2.13506 0.63782,-0.91361 0.63263,1.61138 0.63004,-2.94039 0.62744,2.0841 0.62227,2.18814 0.61966,2.24828 0.61448,1.44932 0.61189,0.26397 0.6093,-0.29015 0.6067,-1.04524 0.60411,-0.88106 0.59893,2.06571 0.59633,-0.41611 0.59374,0.88601 0.58856,0.39276 0.58855,-1.32194 0.58337,-0.0686 0.58077,1.58803 0.57819,1.39271 0.57559,0.46706 0.5704,0.85204 0.57041,1.53566 0.56522,1.63686 0.56522,2.26597 0.56003,0.52581 0.55744,-1.50523 0.55485,2.91916 0.55226,-1.78688 0.54966,0.57888 0.54707,2.17469 0.54448,-0.95749 0.54188,-0.17692 0.53929,-5.24741 0.5367,-0.70131 0.53411,-3.32678 0.53151,-0.38144 0.52892,-1.49391 0.52633,1.53991 0.52374,0.97234 0.52373,-0.19956 0.51855,1.14502 0.51596,0.86973 0.51596,3.69549 0.51077,4.22765 0.51077,2.01759 0.50818,0.81878 0.50559,-1.31274 0.50299,-2.01475 0.5004,0.66804 0.49781,2.70262 0.49781,0.53642 0.49262,-1.03887 0.49262,0.33119 0.49003,-2.3877 0.48744,-1.67153 0.48744,1.99211 0.48225,1.82651 0.48225,1.00773 0.47966,0.27599 0.47706,1.60501 0.47448,1.484 0.47447,-4.83343 0.47188,0.86054 0.46929,-0.276 0.46669,0.85771 0.4667,3.53201 0.4641,-2.69342 0.46151,0.19886 0.45892,1.31698 0.45891,0.68999 0.45633,2.89085 0.45373,-1.73805 0.45373,4.23403 0.44855,-0.4515 0.45113,0.26184 0.44596,-3.81083 0.44595,0.54986 0.44336,-0.89096 0.44077,2.55471 0.44077,4.03021 0.43817,-2.12303 0.43818,-2.11807 0.43298,0.003 0.43559,1.67931 0.43039,4.03517 0.4304,2.96941 0.4278,-2.62972 0.42781,-4.68623 0.42521,-2.30844 0.42262,1.48541 0.42261,-0.034 0.42003,0.44018 0.42003,3.63745 0.41743,0.76429 0.41484,0.0326 0.41484,-1.29292 0.41225,3.33315 0.40965,-1.10256 0.40965,1.46419 0.40966,-0.0191 0.40706,0.18612 0.40447,2.30844 0.40447,0.95748 0.40187,-0.58242 0.40188,2.68988 0.39928,-0.75863 0.3967,-2.07349 0.39669,-0.92352 0.39669,1.3644 0.3941,4.43996 0.3915,-1.41393 0.39151,0.0729 0.38891,-0.47202 0.38891,-0.71688 0.38891,-0.40337 0.38373,1.12803 0.38632,0.19178 0.38373,1.03179 0.38113,0.2767 0.38114,-0.62204 0.37854,3.48459 0.37854,0.7558 0.37595,-0.36587 0.37595,-0.32057 0.37335,-3.63534 0.37336,1.20164 0.37335,2.89439 0.37077,0.18612 0.36817,1.44366 0.36817,0.52722 0.36817,0.92564 0.36558,-0.74447 0.36298,0.41611 0.36558,1.80811 0.36039,1.74513 0.36299,1.09194 0.3578,-1.05726 0.36039,-0.64611 0.3578,1.0969 0.3552,0.35596 0.35521,0.15215 0.35521,3.13925 0.35261,-1.85624 0.35262,1.31487 0.35002,0.0198 0.35002,1.4288 0.35002,-0.46707 0.34743,1.08699 0.34743,-1.51584 0.34483,2.16974 0.34484,1.17261 0.34224,-2.36788 0.34224,2.26456 0.34225,1.58095 0.33965,-2.80876 0.33965,2.01121 0.33965,-0.91856 0.33706,3.54192 0.33446,2.44643 0.33706,3.42515 0.33446,0.92706 0.33187,-1.53566 0.33188,-1.74796 0.33187,-0.60152 0.33187,-1.62553 0.32928,0.97447 0.32669,-0.59657 0.32928,2.67006 0.32668,1.92488 0.3241,0.38214 0.32409,0.3043 0.32409,3.37562 0.3241,-0.19815 0.3215,1.97441 0.3215,-0.50952 0.31891,0.5166 0.31891,-1.45781 0.3189,-2.78825 0.31632,0.44584 0.31631,3.93468 0.31632,3.70114 0.31632,-5.5411 0.31372,-2.10887 0.31113,-0.62984 0.31372,-2.22918 0.31113,2.37072 0.30854,4.64235 0.31113,4.02668 0.30854,2.4061 0.30594,6.28416 0.30854,-1.80457 0.30594,-1.29505 0.30595,-4.46544 0.30335,3.51008 0.30335,-3.55961 0.30335,1.02613 0.30335,0.19815 0.30076,1.35166 0.30076,2.01687 0.29817,1.96734 0.29816,2.83778 0.29817,-1.1252 0.29817,0.36799 0.29557,1.3092 0.29557,1.25259 0.29558,0.84921 0.29557,-1.77627 0.29298,2.25041 0.29298,-2.63255 0.29039,-0.31138 0.29039,-4.95373 0.29039,5.69679 0.29038,3.135 0.2878,4.24606 0.29039,-1.56396 0.2852,3.24115 0.28779,-3.17039 0.28521,-0.48829 0.2852,-1.17474 0.2852,-2.1018 0.28261,1.80457 0.2852,-4.47251 0.28002,8.01797 0.28261,4.27436 0.28002,0.47414 0.28261,4.81928 0.27742,1.06859 0.28002,1.13228 0.27742,-2.53348 0.27743,-2.61132 0.27742,0.27599 0.27483,-0.22646 0.27743,2.97224 0.27483,-1.29504 0.27224,2.86608 0.27483,1.64889 0.27224,-0.83506 0.27224,-0.27599 0.27224,0.9129 0.26964,0.75721 0.26965,-1.0969 0.26964,1.5852 0.26965,1.68427 0.26705,4.70604 0.26965,0.11323 0.26446,-1.88242 0.26705,-1.95318 0.26706,2.15841 0.26446,3.49592 0.26446,1.9178 0.26446,-0.9129 0.26187,-0.0141 0.26186,-4.24606 0.26187,0.49537 0.26187,-5.68971 0.26187,0.53075 0.25927,0.71476 0.25928,4.89004 0.25927,1.21012 0.25928,4.23191 0.25668,3.14208 0.25668,-4.89712 0.25668,-0.95536 0.25669,3.15623 0.25668,-0.17692 0.25409,0.19815 0.25409,-1.53565 0.25409,1.05443 0.25409,1.6772 0.25149,-2.24334 0.2515,-0.78552 0.2515,-0.95536 0.25149,-0.0849 0.24891,1.97441 0.25149,-2.27164 0.24891,2.63256 0.2489,4.23898 0.24631,0.20522 0.24891,-2.27164 0.24631,2.93686 0.24631,-1.63473 0.24631,-1.35166 0.24631,2.23625 0.24372,-1.18889 0.24372,-2.75286 0.24631,1.13228 0.24113,3.42515 0.24371,2.79532 0.24113,0.73598 0.24372,1.28797 0.24112,1.8895 0.24113,-1.39412 0.23853,2.06641 0.24113,-5.34295 0.23853,2.25041 0.23853,2.77409 0.23854,-0.42461 0.23594,-1.45073 0.23853,0.86336 0.23594,-1.06151 0.23594,1.57104 0.23594,1.54273 0.23594,1.48612 0.23335,0.48122 0.23594,1.0049 0.23335,0.75014 0.23334,0.87752 0.23076,-1.05444 0.23335,-3.17039 0.23075,2.37071 0.23335,1.54274 0.23075,0.47414 0.23076,1.36582 0.22816,1.88241 0.23076,-1.49319 0.22816,-0.89875 0.22816,-1.25259 0.22816,0.26184 0.22816,-0.37507 0.22557,0.184 0.22816,-0.35384 0.22557,1.08275 0.22557,0.88459 0.22557,0.63691 0.22557,-1.21013 0.22298,0.58737 0.22557,0.15569 0.22297,0.13446 0.22298,-0.50245 0.22298,-1.59227 0.22038,2.58302 0.22298,-0.007 0.22038,-0.85629 0.22038,-0.36091 0.22039,-0.34676 0.22038,-0.13446 0.22039,1.33043 0.22038,0.7006" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

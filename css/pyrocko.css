@@ -39,7 +39,7 @@ ul {
     list-style: square !important;
 }
 
-ul.subtitled li span {
+ul.subtitled li span, span.sub {
     font-size: 50%;
     opacity: .5;
     display: block;
@@ -59,7 +59,12 @@ img.snuffler-small {
 }
 
 img.insar {
-    width: 45%;
+    width: 100%;
+    background-color: transparent !important;
+}
+
+div.insar {
+    width:45%;
 }
 
 img.github {
@@ -68,33 +73,25 @@ img.github {
     filter: drop-shadow(0 0 1px rgba(255,255,255,.3));
 }
 
-.arrow_box {
-    width: 40%;
-    position: relative;
-    background: #ffffff;
-    border: 4px solid #ffffff;
+div.quadtree {
+    width: 50%;
+    float: left;
 }
 
-.arrow_box:after, .arrow_box:before {
-    left: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent !important;
+  border-bottom: 10px solid transparent !important;
+  border-right:10px solid green !important;
 }
 
-.arrow_box:after {
-    border-color: rgba(255, 255, 255, 0);
-    border-left-color: #ffffff;
-    border-width: 30px;
-    margin-top: -30px;
-}
-.arrow_box:before {
-    border-color: rgba(255, 255, 255, 0);
-    border-left-color: #ffffff;
-    border-width: 36px;
-    margin-top: -36px;
+.arrow-right {
+  margin-top: 10% !important;
+  vertical-align: middle !important;
+  width: 0;
+  height: 0; 
+  border-top: 60px solid transparent !important;
+  border-bottom: 60px solid transparent !important;
+  border-left: 60px solid rgba(255,255,255,.4) !important;
 }
