@@ -58,7 +58,7 @@
 					<section data-background-image='img/forest.jpg'>
 						<div class="overl">
 							<h2>Managing Data (I/O)</h2>
-							<p>Seismological waveforms</p>
+							<p>Seismological waveforms and metadata</p>
 						</div>
 					</section>
 					<section>
@@ -67,7 +67,7 @@
 							import pyrocko.io
 							trace = pyrocko.io.load('waveforms.mseed')
 						</code></pre>
-						<span class="sub">Supported formats: MiniSEED / SEGY / SAC / GSE / SEISAN ...</span>
+						<span class="sub">Supported formats: MiniSEED / SEGY / SAC / GSE / SEISAN and more</span>
 						<div class="fragment" style="margin-top: 1em; ">
 							<h3>Basic Signal Processing</h3>
 							<pre><code class="python" data-trim>
@@ -90,7 +90,7 @@
 					</section>
 					<section>
 						<h2>Plugins to Snuffler</h2>
-						<h4>Called <i>Snufflings</i></h4>
+						<h4><i>Snufflings</i></h4>
 						<img data-src="img/snuffling.png" style="height: 500px;"/>
 					</section>
 					<!-- <section>
@@ -118,24 +118,39 @@
 					<section data-background-image='img/library-1.jpg'>
 						<div class='overl'>
 							<h2>Datasets</h2>
-							<p>Access online resources (seamless)</p>
+							<p>Access online resources (seamlessly)</p>
 						</div>
 					</section>
 					<section>
 						<h3>Seismic Velocity datasets</h3>
-						<ul class="subtitled">
-							<li>
-								CRUST2.0
-								<span>Bassin et al., 2000</span>
-							</li>
-							<li>
-								Global Crustal Database
-								<span>Mooney et al., 1998</span>
-							</li>
-						</ul>
+						<pre><code class="python" data-trim>
+							from pyrocko import dataset
+						</code></pre>
+						<div style="vertical-align: top;">
+							<div class="velocity" style="width: 60%;">
+								<ul class="subtitled">
+									<li>
+										CRUST2.0
+										<span>Bassin et al., 2000</span>
+									</li>
+									<li>
+										Global Crustal Database
+										<span>Mooney et al., 1998</span>
+									</li>
+								</ul>
+							</div>
+							<div class="velocity" style="width: 35%;">
+								<img data-src="img/cake_crust2.png" style="width: 80%; height: 80%;"/>
+							</div>
+							<img class="fragment" data-src="img/crustdb_plot.png"
+							 style="position: fixed; top: 500px; left: 80px;"/>
+						</div>
 					</section>
 					<section>
 						<h3>Geo datasets</h3>
+						<pre><code class="python" data-trim>
+							from pyrocko import dataset
+						</code></pre>
 						<div style="vertical-align: top;">
 							<ul class="subtitled">
 								<li>
@@ -160,7 +175,7 @@
 									<span>Cities and Population</span>
 								</li>
 							</ul>
-							<img data-src="img/new_zealand-edited.png" width="45%" style="background-color: transparent !important; box-shadow: none !important; filter: drop-shadow(0 0 2px rgba(255,255,255,.2)); padding: 20px;">
+							<img data-src="img/new_zealand-edited.png" width="45%" style="background-color: transparent; box-shadow: none; filter: drop-shadow(0 0 2px rgba(255,255,255,.2)); padding: 20px;">
 						</div>
 					</section>
 				</section>
@@ -168,53 +183,84 @@
 					<section data-background-image="img/analogue-modelling.jpg">
 						<div class="overl">
 							<h2>Forward Modelling</h2>
-							<p>Green's function databases</p>
+							<p>Pre-Calculated Green's function databases</p>
 						</div>
 					</section>
 					<section>
 						<h2>Waveform modelling</h2>
-						<ul class="subtitled">
-							<li>
-								AhFullGreen
-								<span>Homogeneous full space</span>
-							</li>
-							<li>
-								QSEIS
-								<span>Layered half-space</span>
-							</li>
-							<li>
-								QSSP
-								<span>Self-gravitating spherical earth (Wang et al. 2006)</span>
-							</li>
-						</ul>
+						<div style="vertical-align: top;">
+							<ul class="subtitled" style="width: 60%;">
+								<li>
+									QSEIS
+									<span>Synthetic seismograms for a flat earth (Wang et al., 1999)</span>
+								</li>
+								<li>
+									QSSP
+									<span>Complete synthetic seismograms for a spherical earth (Wang et al., 2017)</span>
+								</li>
+								<li>
+									AhFullGreen
+									<span>Elastic homogeneous full space (Aki &amp; Richards, 2002)</span>
+								</li>
+							</ul>
+							<img data-src="img/seismic_traces.svg" style="background-color: transparent; width: 35%; opacity: .8;" />
+						</div>
 						<pre class="fragment"><code class="python" data-trim>
-							source = DCSource(moment=5.4, strike=20., dip=30., rake=32.)
+							source = DCSource(lat=60.2, lon=31., moment=5.4, strike=20., ...)
 							target = WaveformTarget(lat=10.3, lon=22.3)
 							result = pyrocko.gf.seismoseizer(source, target)
 						</code></pre>
 					</section>
 					<section>
 						<h2>Near-field modelling</h2>
-						<ul class="subtitled">
+						<div style="vertical-align: top;">
+						<ul class="subtitled" style="width: 60%;">
 							<li>
 								PSGRN/PSCMP
-								<span>Wang et al., 2009</span>
+								<span>Co- and post-seismic deformation in layered viscoelastic half-space (Wang et al., 2006)</span>
+								<ul style="font-size: 50%; opacity: .5">
+									<li>Static displacements</li>
+									<li>Coulomb stress change</li>
+									<li>Gravity effects ...</li>
+								</ul>
 							</li>
-							<ul style="font-size: 80%; opacity: .5">
-								<li>Static displacements</li>
-								<li>Coulomb stress change</li>
-								<li>Gravity effects</li>
-								<li>...</li>
-							</ul>
+							<li>
+								PEOL
+								<span>Diffusion and deformation processes by pump tests in layered poroelastic half-space (Wang et al., 2003)</span>
+							</li>
 						</ul>
 						<pre class="fragment"><code class="python" data-trim>
-							source = RectangularSource(moment=5.4, strike=20., dip=30., rake=32.)
+							source = RectangularSource(lat=10.2, lon 21.5, slip=3., ...)
 							target = StaticTarget(lats=[10.3, ...], lons=[22.3, ...])
 							result = pyrocko.gf.seismoseizer(source, target)
 						</code></pre>
 					</section>
 				</section>
 				<section>
+					<section data-background-image="img/applications.jpg">
+						<div class="overl">
+							<h2>Applications</h2>
+							<p>Putting parts together</p>
+						</div>
+					</section>
+					<section>
+						<h2>Grond</h2>
+						<p>Full waveform source inversion - The bayesian battleram</p>
+						<!-- <p class="fragment">Geodetic data (InSAR and GNSS)</p> -->
+					</section>
+					<section>
+						<h2>BEAT</h2>
+						<p>Bayesian Earthquake Analysis Tool</p>
+					</section>
+					<section>
+						<h2>Static Source Modelling</h2>
+						<p>Talpa</p>
+					</section>
+					<section>
+						<h2>Lassie</h2>
+						<p>The Earthquake Detector</p>
+						<img class="fragment" data-src="img/lassie_example.png" />
+					</section>
 					<section data-background-image="img/surface-displacement-edited.png">
 						<div class="overl">
 							<h2>InSAR Handling</h2>
@@ -252,32 +298,15 @@
 					</section>
 				</section>
 				<section>
-					<section data-background-image="img/applications.jpg">
-						<div class="overl">
-							<h2>Applications</h2>
-							<p>Putting parts together</p>
+					<section>
+						<h4 style="opacity: .5;">Available and documented at</h4>
+						<h3>pyrocko.org</h3>
+						<h4 style="opacity: .75;">github.com/pyrocko</h4>
+						<div style="position: fixed; bottom: 30px; right: 30px; width: 80px; height: 80px">
+							<img class="github" style="margin-bottom: 0px;" data-src="img/logos/Octocat.png" />
+							<img class="github" style="margin-top: 0px" data-src="img/logos/GitHub_Logo_White.png" />
 						</div>
 					</section>
-					<section>
-						<h2>Grond</h2>
-						<p>Full waveform source inversion - The beyesian battleram</p>
-						<!-- <p class="fragment">Geodetic data (InSAR and GNSS)</p> -->
-					</section>
-					<section>
-						<h2>BEAT</h2>
-						<p>Bayesian Earthquake Analysis Tool</p>
-					</section>
-					<section>
-						<h2>Static Source Modelling</h2>
-						<p>Talpa</p>
-					</section>
-					<section>
-						<h2>Lassie</h2>
-						<p>The Earthquake Detector</p>
-						<img class="fragment" data-src="img/lassie_example.png" />
-					</section>
-				</section>
-				<section>
 					<section>
 						<h2>Contributors</h2>
 						<div>
@@ -309,10 +338,6 @@
 						<h2>Thank you!</h2>
 						<p>Software available on <b>pyrocko.org</b></p>
 						<img data-src="img/group-photo.jpg" />
-						<div style="position: fixed; bottom: 30px; right: 30px; width: 80px; height: 80px">
-							<img class="github" style="margin-bottom: 0px;" data-src="img/logos/Octocat.png" />
-							<img class="github" style="margin-top: 0px" data-src="img/logos/GitHub_Logo_White.png" />
-						</div>
 					</section>
 				</section>
 			</div>
