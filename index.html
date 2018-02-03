@@ -41,21 +41,50 @@
 				<section>
 					<h2>What is Pyrocko?</h2>
 					<div>
-						<p>A Python framework for geophysicists.</p>
 						<pre><code class="hljs" data-trim>
 							import pyrocko
 						</code></pre>
+						<p>A Python framework for geophysicists.</p>
 					</div>
-					<p class="fragment">Software building blocks for seismological research.</p>
-					<div class="pyrocko-stack">
-						<div class="block" style="width: 100%;">Applications</div>
-						<div style="width: 45%; display: inline-block; position: relative;">
-							<div class="block">Observations and Datasets</div>
-							<div class="block">I/O</div>
-							<div class="block">Clients</div>
+					<div class="pyrocko-stack" style="height: 250px;">
+						<div class="fragment block" data-fragment-index="3" style="width: 96%;">Applications</div>
+						<div class="fragment pyrocko-stack" data-fragment-index="1" style="width: 48%;">
+							<div class="block" style="width: 96%">Observations and Datasets</div>
+							<div class="block" style="width: 46%">I/O</div>
+							<div class="block" style="width: 46%">Clients</div>
 						</div>
-						<div class="block" style="width: 45%;">Modelling</div>
+						<div class="fragment block" data-fragment-index="2" style="width: 48%; padding-top: 100px;">Modelling</div>
 					</div>
+				</section>
+				<section>
+						<h4>Contributors</h4>
+						<div class="contributors">
+							<div>
+								Sebastian Heimann
+								Marius Kriegerowski
+								Marius Isken
+								Hannes Vasyura-Bathke
+								Simone Cesca
+								Torsten Dahm
+							</div>
+							<div>
+								Simon Daout
+								Francesco Grigoli
+								Carina Juretzek
+								Henning Lilienkamp
+								Daniela Kühn
+								Richard McGraw
+							</div>
+							<div>
+								Tobias Megies
+								Nima Nooshiri
+								Gesa Petersen
+								Andreas Steinberg
+								Henriette Sudhaus
+								Timothy Willey
+							</div>
+							<img data-src="img/group-photo.jpg" />
+						</div>
 				</section>
 				<section>
 					<section data-background-image='img/forest.jpg'>
@@ -83,8 +112,26 @@
 						</div>
 					</section>
 					<section>
+						<h3>Download waveforms</h3>
+						<pre><code class="python" data-trim>
+							request_waveform = fdsn.dataselect(site='geofon', selection=...)
+							request_waveform.read()
+						</code></pre>
+						<span class="sub">Access to FDSN services and IRIS WebService</span>
+						<div class="fragment">
+							<h3>Access Earthquake Catalogs</h3>
+							<pre><code class="python" data-trim>
+								global_cmt = catalog.GlobalCMT()
+								global_cmt.get_events(
+									time_range=(tmin, tmax),
+									magmin=2.)
+							</code></pre>
+							<span class="sub">Search catalogs such as Geofon, GlobalCMT or USGS ... </span>
+						</div>
+					</section>
+					<section>
 						<h2>Exploring data</h2>
-						<p>with the Snuffler <img data-src='img/logos/flag-black.svg' class="snuffler-small">User Interface</p>
+						<p>With the <i>Snuffler</i> <img data-src='img/logos/flag-black.svg' class="logo-inline"></p>
 						<pre><code class="python" data-trim>
 							trace.snuffle()
 						</code></pre>
@@ -246,12 +293,16 @@
 							<p>Earthquake source characterization</p>
 						</div>
 					</section>
-					<section data-background-image="img/Grond_arrives.png">
-						<div class="overl">
+					<section class="white" data-background="#ffffff">
+						<h2>Lassie</h2>
+						<p>The Earthquake Detector <img data-src="img/logos/lassie.svg" class="logo-inline" /></p>
+						<img data-src="img/lassie_example-edited.png" style="box-shadow: none !important;" />
+						<span class="sub">Automatic event detection and location using full waveform stacks</span>
+					</section>
+					<section class="white" data-background="#ffffff">
 						<h2>Grond</h2>
 						<p>Full waveform source inversion - The Bayesian battleram</p>
 						<!-- <p class="fragment">Geodetic data (InSAR and GNSS)</p> -->
-						</div>
 						<p>Bootstrap based probabilistic earthquake source inversion</p>
                         <ul>
                             <li>Multi dataset optimization</li>
@@ -265,16 +316,11 @@
                         </p>
                         <p>https://gitext.gfz-potsdam.de/heimann/grond/ (noch umziehen???)</p>
 					</section>
-					<section>
+					<section class="white" data-background="#ffffff">
 						<h2>BEAT</h2>
 						<p>Bayesian Earthquake Analysis Tool</p>
 					</section>
-					<section>
-						<h2>Lassie</h2>
-						<p>The Earthquake Detector</p>
-						<img data-src="img/lassie_example-edited.png" style="background-color: transparent; filter: invert(100%); box-shadow: none !important;"/>
-					</section>
-					<section>
+					<section class="white" data-background="#ffffff">
 						<h2>Static Source Modelling</h2>
 						<p>Talpa</p>
 						<img data-src="img/talpa-src_mod.gif" style="width: 700px; height: auto;" />
@@ -286,7 +332,7 @@
 						</div>
 						<span style="position: fixed; bottom: 10px; right: 10px; font-size: 50%">USGS, 2016</span>
 					</section>
-					<section>
+					<section class="white" data-background="#fff">
 						<h2>Quadtree Subsampling</h2>
 						<p>Adaptive downsampling for modelling.</p>
 						<div style="display: inline-flex; vertical-align: middle;">
@@ -298,7 +344,7 @@
 									<img class="insar" data-src="img/myanmar-quadtree.gif" />
 								</div>
 					</section>
-					<section>
+					<!-- <section>
 						<h2>Noise Covariance Estimation</h2>
 						<div style="display: inline-flex; vertical-align: middle;">
 							<div class="insar-covariance">
@@ -313,49 +359,20 @@
 								<img class="insar" data-src="img/myanmar-covariance.svg" />
 							</div>
 						</div>
-					</section>
+					</section> -->
 				</section>
 				<section>
-					<section>
-						<h4 style="opacity: .5;">Available at</h4>
+					<section class="white" data-background="#fff">
+						<h4>Available at</h4>
 						<h3>pyrocko.org</h3>
 						<h4 style="opacity: .75;">github.com/pyrocko</h4>
 						<div style="position: fixed; bottom: 30px; right: 30px; width: 80px; height: 80px">
-							<img class="github" style="margin-bottom: 0px;" data-src="img/logos/Octocat.png" />
-							<img class="github" style="margin-top: 0px" data-src="img/logos/GitHub_Logo_White.png" />
+							<img class="logo" style="margin-bottom: 0px;" data-src="img/logos/Octocat.png" />
+							<img class="logo" style="margin-top: 0px" data-src="img/logos/GitHub_Logo.png" />
 						</div>
 					</section>
-					<section>
-						<h2>Contributors</h2>
-						<div>
-							<div style="width: 50%; white-space: pre-line; float: left;">
-								Sebastian Heimann
-								Marius Kriegerowski
-								Marius Isken
-								Hannes Vasyura-Bathke
-								Simone Cesca
-								Torsten Dahm
-								Simon Daout
-								Francesco Grigoli
-								Carina Juretzek
-							</div>
-							<div style="width: 50%; white-space: pre-line; float: left;">
-								Henning Lilienkamp
-								Daniela Kühn
-								Richard McGraw
-								Tobias Megies
-								Nima Nooshiri
-								Gesa Petersen
-								Andreas Steinberg
-								Henriette Sudhaus
-								Timothy Willey
-							</div>
-						</div>
-					</section>
-					<section>
+					<section class="white" data-background="#fff">
 						<h2>Thank you!</h2>
-						<p>Software available on <b>pyrocko.org</b></p>
-						<img data-src="img/group-photo.jpg" />
 					</section>
 				</section>
 			</div>
