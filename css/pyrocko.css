@@ -1,4 +1,4 @@
-img.snuffler-front {
+img.snuffler-title {
     border: none !important;
     background-color: rgba(255,255,255,0) !important;
     margin: 0px;
@@ -10,9 +10,9 @@ div.logos {
     bottom: 0px;
     background-color: #fff !important;
     width: 100%;
-    -webkit-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.9);
-    -moz-box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.9);
-    box-shadow: inset 0px 5px 8px -5px rgba(0,0,0,0.9);
+    -webkit-box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);
+    -moz-box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);
 }
 
 div.logos img {
@@ -21,9 +21,19 @@ div.logos img {
     max-width: 250px;
     border: none !important;
     margin: 12px;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+div.pyrocko-stack {
+  display: flex;
+  flex-direction: row;
+}
+
+div.pyrocko-stack .block {
+  border: 1px solid white;
+  display: inline-block;
 }
 
 p.subtitle {

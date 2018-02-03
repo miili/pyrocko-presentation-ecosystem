@@ -28,7 +28,7 @@
 			<div class="slides">
 				<section id='frontpage'>
 					<h2>The Pyrocko Ecosystem</h2>
-					<img class='snuffler-front' data-src='img/logos/flag-black.svg'>
+					<img class='snuffler-title' data-src='img/logos/flag-black.svg'>
 					<h4>Software for Seismology</h4>
 					<p class='subtitle'><b>Marius Isken</b>, Sebastian Heimann, Henriette Sudhaus, Marius Kriegerowski, Hannes Vasyura-Bathke, Simon Daouts, Andreas Steinberg, Torsten Dahm<p>
 					<div class='logos'>
@@ -40,19 +40,22 @@
 				</section>
 				<section>
 					<h2>What is Pyrocko?</h2>
-					<div class="fragment fade-in">
+					<div>
 						<p>A Python framework for geophysicists.</p>
 						<pre><code class="hljs" data-trim>
 							import pyrocko
 						</code></pre>
 					</div>
 					<p class="fragment">Software building blocks for seismological research.</p>
-					<ul class="fragment">
-						<li>Waveform handling</li>
-						<li>Forward modelling</li>
-						<li>InSAR surface displacement</li>
-						<li>Applications</li>
-					</ul>
+					<div class="pyrocko-stack">
+						<div class="block" style="width: 100%;">Applications</div>
+						<div style="width: 45%; display: inline-block; position: relative;">
+							<div class="block">Observations and Datasets</div>
+							<div class="block">I/O</div>
+							<div class="block">Clients</div>
+						</div>
+						<div class="block" style="width: 45%;">Modelling</div>
+					</div>
 				</section>
 				<section>
 					<section data-background-image='img/forest.jpg'>
@@ -71,8 +74,8 @@
 						<div class="fragment" style="margin-top: 1em; ">
 							<h3>Basic Signal Processing</h3>
 							<pre><code class="python" data-trim>
-								trace.highpass(5)
-								trace.lowpass(10)
+								trace.highpass(5.)
+								trace.lowpass(10.)
 								trace.detrend('linear')
 								trace.decimate(10)
 								...
@@ -81,7 +84,7 @@
 					</section>
 					<section>
 						<h2>Exploring data</h2>
-						<p>with the Snuffler <img data-src='img/logos/flag-black.svg' class="snuffler-small"> User Interface</p>
+						<p>with the Snuffler <img data-src='img/logos/flag-black.svg' class="snuffler-small">User Interface</p>
 						<pre><code class="python" data-trim>
 							trace.snuffle()
 						</code></pre>
@@ -208,7 +211,7 @@
 						<pre class="fragment"><code class="python" data-trim>
 							source = DCSource(lat=60.2, lon=31., moment=5.4, strike=20., ...)
 							target = WaveformTarget(lat=10.3, lon=22.3)
-							result = pyrocko.gf.seismoseizer(source, target)
+							result = pyrocko.gf.seismosizer(source, target)
 						</code></pre>
 					</section>
 					<section>
@@ -226,21 +229,21 @@
 							</li>
 							<li>
 								PEOL
-								<span>Diffusion and deformation processes by pump tests in layered poroelastic half-space (Wang et al., 2003)</span>
+								<span>Diffusion and deformation processes by pump tests (Wang et al., 2003)</span>
 							</li>
 						</ul>
 						<pre class="fragment"><code class="python" data-trim>
 							source = RectangularSource(lat=10.2, lon 21.5, slip=3., ...)
 							target = StaticTarget(lats=[10.3, ...], lons=[22.3, ...])
-							result = pyrocko.gf.seismoseizer(source, target)
+							result = pyrocko.gf.seismosizer(source, target)
 						</code></pre>
 					</section>
 				</section>
 				<section>
-					<section data-background-image="img/applications.jpg">
+					<section data-background-image="img/applications.jpg">  
 						<div class="overl">
 							<h2>Applications</h2>
-							<p>Putting parts together</p>
+							<p>Earthquake source characterization</p>
 						</div>
 					</section>
 					<section data-background-image="img/Grond_arrives.png">
@@ -329,7 +332,7 @@
 								Sebastian Heimann
 								Marius Kriegerowski
 								Marius Isken
-								Hannes Bathke
+								Hannes Vasyura-Bathke
 								Simone Cesca
 								Torsten Dahm
 								Simon Daout
