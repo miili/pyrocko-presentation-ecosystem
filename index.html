@@ -165,10 +165,10 @@
 					</section>
 				</section>
 				<section>
-					<section data-background-image='img/library-1.jpg'>
+					<section data-background-image='img/library.jpg'>
 						<div class='overl'>
 							<h2>Datasets</h2>
-							<p>Access online resources (seamlessly)</p>
+							<p>Access online resources, seamlessly</p>
 						</div>
 					</section>
 					<section>
@@ -264,21 +264,18 @@
 					<section>
 						<h2>Near-field modelling</h2>
 						<div style="vertical-align: top;">
-						<ul class="subtitled" style="width: 60%;">
-							<li>
-								PSGRN/PSCMP
-								<span>Co- and post-seismic deformation in layered viscoelastic half-space (Wang et al., 2006)</span>
-								<ul style="font-size: 50%; opacity: .5">
-									<li>Static displacements</li>
-									<li>Coulomb stress change</li>
-									<li>Gravity effects ...</li>
-								</ul>
-							</li>
-							<li>
-								PEOL
-								<span>Diffusion and deformation processes by pump tests (Wang et al., 2003)</span>
-							</li>
-						</ul>
+							<ul class="subtitled" style="width: 60%;">
+								<li>
+									PSGRN/PSCMP
+									<span>Co- and post-seismic deformation in layered viscoelastic half-space (Wang et al., 2006)</span>
+								</li>
+								<li>
+									POEL
+									<span>Diffusion and deformation processes by pump tests (Wang et al., 2003)</span>
+								</li>
+							</ul>
+							<img class="fragment" data-src="img/Myanmar_topo.png" style="background-color: transparent; width: 35%; opacity: .8;" />
+						</div>
 						<pre class="fragment"><code class="python" data-trim>
 							source = RectangularSource(lat=10.2, lon 21.5, slip=3., ...)
 							target = StaticTarget(lats=[10.3, ...], lons=[22.3, ...])
@@ -303,6 +300,7 @@
 						<h2>Grond</h2>
 						<p>Full waveform source inversion - The Bayesian battleram</p>
 						<!-- <p class="fragment">Geodetic data (InSAR and GNSS)</p> -->
+						<img data-src="img/grond-sketch.png">
 						<p>Bootstrap based probabilistic earthquake source inversion</p>
                         <ul>
                             <li>Multi dataset optimization</li>
@@ -317,8 +315,9 @@
                         <p>https://gitext.gfz-potsdam.de/heimann/grond/ (noch umziehen???)</p>
 					</section>
 					<section class="white" data-background="#ffffff">
-						<h2>BEAT</h2>
+						<h2>BEAT <img data-src="img/logos/BEAT.svg" class="logo-inline"></h2>
 						<p>Bayesian Earthquake Analysis Tool</p>
+						<p class="sub">Flexible multi-dataset deformation source optimization for extended sources. Incorporating bayesian uncertainties.</p>
 					</section>
 					<section class="white" data-background="#ffffff">
 						<h2>Static Source Modelling</h2>
