@@ -11,7 +11,7 @@ nframes = 100
 trace_offset = 0.1
 
 store_id = 'qplayground_total_4_mr_full'
-engine = LocalEngine(store_superdirs=['.'])
+engine = LocalEngine(use_config=True)
 
 ls = num.linspace
 dips = ls(0, 360, nframes)
