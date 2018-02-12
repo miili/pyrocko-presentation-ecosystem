@@ -72,7 +72,7 @@ ul {
     list-style: square !important;
 }
 
-ul.subtitled li span, span.sub {
+ul.subtitled li span, .sub {
     font-size: 50%;
     opacity: .5;
     display: block;
