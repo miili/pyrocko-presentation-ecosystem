@@ -242,11 +242,11 @@
 							<ul class="subtitled" style="width: 60%;">
 								<li>
 									QSEIS
-									<span>Synthetic seismograms for a flat earth (Wang et al., 1999)</span>
+									<span>Synthetic seismograms for a flat earth <nobr>(Wang et al., 1999)</nobr></span>
 								</li>
 								<li>
 									QSSP
-									<span>Complete synthetic seismograms for a spherical earth (Wang et al., 2017)</span>
+									<span>Complete synthetic seismograms for a spherical earth <nobr>(Wang et al., 2017)</nobr></span>
 								</li>
 								<li>
 									AhFullGreen
@@ -271,7 +271,7 @@
 								</li>
 								<li>
 									POEL
-									<span>Diffusion and deformation processes by pump tests (Wang et al., 2003)</span>
+									<span>Diffusion and deformation processes by pump tests <nobr>(Wang et al., 2003)</nobr></span>
 								</li>
 							</ul>
 							<img class="fragment" data-src="img/Myanmar_topo.png" style="background-color: transparent; width: 35%; opacity: .8;" />
@@ -298,38 +298,41 @@
 					</section>
 					<section class="white" data-background="#ffffff">
 						<h2>Grond</h2>
-						<p style="font-size:80%">Bootstrap based probabilistic earthquake source inversion</p>
+						<p style="font-size: 80%">Bootstrap based probabilistic earthquake source inversion</p>
                         <img data-src="img/grond.png">
-                        <p style="font-size:80%">https://gitext.gfz-potsdam.de/heimann/grond/</p>
+                        <p style="font-size: 80%; opacity: .75;">https://gitext.gfz-potsdam.de/heimann/grond/</p>
 					</section>
 					<section class="white" data-background="#ffffff">
 						<h2>BEAT <img data-src="img/logos/BEAT.svg" class="logo-inline"></h2>
 						<p>Bayesian Earthquake Analysis Tool</p>
-						<p class="sub">Flexible multi-dataset deformation source optimization for extended sources. Incorporating bayesian uncertainties.</p>
+						<img data-src="img/BEAT_correlation.svg" style="height: 450px; box-shadow: none !important;" />
+						<p class="sub">Flexible multi-dataset deformation source optimization for extended sources, incorporating model uncertainties. - https://github.com/hvasbath/beat</p>
 					</section>
 					<section class="white" data-background="#ffffff">
-						<h2>Static Source Modelling</h2>
+						<h2 style="font-size: 130%;">Static Displacement Modelling</h2>
 						<p>Talpa</p>
 						<img data-src="img/talpa-src_mod.gif" style="width: 700px; height: auto;" />
+						<p class="sub">Interactive static displacement modelling serving multiple backends.</p>
 					</section>
-					<section data-background-image="img/surface-displacement-edited.png">
+<!-- 					<section data-background-image="img/surface-displacement-edited.png">
 						<div class="overl">
 							<h2>InSAR Handling</h2>
 							<p>Surface displacement data</p>
 						</div>
 						<span style="position: fixed; bottom: 10px; right: 10px; font-size: 50%">USGS, 2016</span>
-					</section>
+					</section> -->
 					<section class="white" data-background="#fff">
-						<h2>Quadtree Subsampling</h2>
-						<p>Adaptive downsampling for modelling.</p>
+						<h2>KITE - InSAR Handling</h2>
 						<div style="display: inline-flex; vertical-align: middle;">
-								<div class="insar">
-									<img class="insar" data-src="img/myanmar-full.png" />
-								</div>
-								<div class="arrow-right"></div>
-								<div class="insar">
-									<img class="insar" data-src="img/myanmar-quadtree.gif" />
-								</div>
+							<div class="insar">
+								<img class="insar" data-src="img/myanmar-full.png" />
+							</div>
+							<div class="arrow-right"></div>
+							<div class="insar">
+								<img class="insar" data-src="img/myanmar-quadtree.gif" />
+							</div>
+						</div>
+						<p class="sub" style="display: block;">Data reduction and noise estimation for satellite-borne displacement modelling.</p>
 					</section>
 					<!-- <section>
 						<h2>Noise Covariance Estimation</h2>
