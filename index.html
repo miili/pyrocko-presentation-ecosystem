@@ -243,6 +243,9 @@
 					</section>
 					<section>
 						<h2 style="font-size: 120%;">Green's function databases</h2>
+						<pre><code class="python" data-trim>
+							from pyrocko import gf
+						</code></pre>
 						<img data-src="img/gf_database.svg" style="background-color: transparent; box-shadow: none !important; padding-right: 20px;"/>
 						<img class="fragment" data-src="img/gf_sources.svg" style="background-color: transparent; box-shadow: none !important;padding-left: 20px;"/>
 					</section>
@@ -268,7 +271,7 @@
 						<pre class="fragment"><code class="python" data-trim>
 							source = DCSource(lat=60.2, lon=31., moment=5.4, strike=20., ...)
 							target = WaveformTarget(lat=10.3, lon=22.3)
-							result = pyrocko.gf.seismosizer(source, target)
+							result = gf.process(source, target)
 						</code></pre>
 					</section>
 					<section>
@@ -289,7 +292,7 @@
 						<pre class="fragment"><code class="python" data-trim>
 							source = RectangularSource(lat=10.2, lon 21.5, slip=3., ...)
 							target = StaticTarget(lats=[10.3, ...], lons=[22.3, ...])
-							result = pyrocko.gf.seismosizer(source, target)
+							result = gf.process(source, target)
 						</code></pre>
 					</section>
 				</section>
