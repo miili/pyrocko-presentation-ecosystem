@@ -84,9 +84,9 @@ def update_plot(iframe, *args):
 if __name__ == '__main__':
     ani = manimation.FuncAnimation(
         fig, update_plot, interval=50, frames=nframes, blit=True,
-        save_count=250)
+        save_count=100)
     if len(sys.argv) > 1 and sys.argv[1] == 'save':
         print('Saving animation...')
-        ani.save('traces.mp4', dpi=90, writer='ffmpeg')
+        ani.save('traces.mp4', dpi=80, writer='imagemagick')
     else:
         plt.show()
