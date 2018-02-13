@@ -9,18 +9,18 @@ import matplotlib.animation as manimation
 km = 1e3
 
 ntraces = 25
-nframes = 100
+nframes = 1000
 trace_offset = 0.1
 
 store_id = 'qplayground_total_4_mr_full'
-store_id = 'crust2_gc'
+store_id = 'crust2_u6'
 engine = LocalEngine(store_superdirs=['.'])
 
 ls = num.linspace
-dips = ls(60, 60, nframes)
+dips = ls(0, 360, nframes)
 rakes = ls(0., 10., nframes)
 strikes = ls(-180., 180, nframes)
-depths = ls(4*km, 4*km, nframes)
+depths = ls(10*km, 10*km, nframes)
 east_shifts = ls(100., 200*km, ntraces)
 nshift = 5*km
 
@@ -36,8 +36,8 @@ ylim = ntraces*trace_offset
 fig = plt.figure()
 ax = fig.add_subplot(111, facecolor='black')
 
-ax.set_xlim(-20, 75)
-ax.set_ylim(-2., ylim)
+ax.set_xlim(-20, 190)
+ax.set_ylim(-1., ylim+.7)
 
 lines = []
 for t in targets:
@@ -72,20 +72,21 @@ def update_plot(iframe, *args):
     for itr, tr in enumerate(trs):
         tr.extend(tmin=ax.get_xlim()[0], tmax=ax.get_xlim()[1],
                   fillmethod="repeat")
-        # tr.lowpass(4, .4)
+        tr.lowpass(4, .4)
         # tr.highpass(4, .1)
         lines[itr].set_data(
             tr.get_xdata(),
             tr.get_ydata()/scale + itr * trace_offset)
-    ax.relim()
 
     return lines
 
 
 if __name__ == '__main__':
     ani = manimation.FuncAnimation(
-        fig, update_plot, interval=50, frames=nframes, blit=True)
+        fig, update_plot, interval=50, frames=nframes, blit=True,
+        save_count=250)
     if len(sys.argv) > 1 and sys.argv[1] == 'save':
-        ani.save('traces.gif', dpi=80, writer='imagemagick')
+        print('Saving animation...')
+        ani.save('traces.mp4', dpi=90, writer='ffmpeg')
     else:
         plt.show()
