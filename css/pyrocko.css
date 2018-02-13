@@ -1,6 +1,7 @@
 img.snuffler-title {
     border: none !important;
     background-color: rgba(255,255,255,0) !important;
+    box-shadow: none !important;
     margin: 0px;
     height: 80px;
 }
@@ -10,9 +11,9 @@ div.logos {
     bottom: 0px;
     background-color: #fff !important;
     width: 100%;
-    -webkit-box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);
+/*    -webkit-box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);
     -moz-box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);
-    box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);
+    box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.9);*/
 }
 
 div.logos img {

@@ -101,7 +101,7 @@
 						</code></pre>
 						<span class="sub">Supported formats: MiniSEED / SEGY / SAC / GSE / SEISAN and more</span>
 						<div class="fragment" style="margin-top: 1em; ">
-							<h3>Basic Signal Processing</h3>
+							<h3>Basic signal processing</h3>
 							<pre><code class="python" data-trim>
 								trace.highpass(5.)
 								trace.lowpass(10.)
@@ -119,7 +119,7 @@
 						</code></pre>
 						<span class="sub">Access to FDSN services and IRIS WebService</span>
 						<div class="fragment">
-							<h3>Access Earthquake Catalogs</h3>
+							<h3 style="padding-top: 50px">Access earthquake catalogs</h3>
 							<pre><code class="python" data-trim>
 								global_cmt = catalog.GlobalCMT()
 								global_cmt.get_events(
@@ -140,7 +140,7 @@
 					</section>
 					<section>
 						<h2>Plugins - <i>Snufflings</i></h2>
-						<img data-src="img/snuffling.png" style="height: 500px;"/>
+						<img data-src="img/snuffling-map.png" style="height: 500px;"/>
 						<p class="sub">Maps, Spectrograms, PSD, Hyposat (support v6 coming), Synthetic Arrival times, Partical Motion and more...</p>
 					</section>
 					<!-- <section>
@@ -279,7 +279,7 @@
 									<span>Diffusion and deformation processes by pump tests <nobr>(Wang et al., 2003)</nobr></span>
 								</li>
 							</ul>
-							<img class="fragment" data-src="img/Myanmar_topo.png" style="background-color: transparent; width: 35%; opacity: .8;" />
+							<img data-src="img/Myanmar_topo.png" style="background-color: transparent; width: 350px; opacity: .8;" />
 						</div>
 						<pre class="fragment"><code class="python" data-trim>
 							source = RectangularSource(lat=10.2, lon 21.5, slip=3., ...)
@@ -367,6 +367,7 @@
 						</div>
 					</section>
 					<section class="white" data-background="#fff">
+						<img data-src='img/logos/pyrocko.svg' style="box-shadow: none !important;"/>
 						<h2>Thank you!</h2>
 					</section>
 				</section>
