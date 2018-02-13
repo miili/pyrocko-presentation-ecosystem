@@ -9,7 +9,7 @@ import matplotlib.animation as manimation
 km = 1e3
 
 ntraces = 25
-nframes = 250
+nframes = 400
 trace_offset = 0.1
 
 store_id = 'qplayground_total_4_mr_full'
