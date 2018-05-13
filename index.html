@@ -30,7 +30,9 @@
 					<h2>The Pyrocko Ecosystem</h2>
 					<img class='snuffler-title' data-src='img/logos/flag-black.svg'>
 					<h4>Software for Seismology</h4>
-					<p class='subtitle'><b>Marius Isken</b>, Sebastian Heimann, Henriette Sudhaus, Marius Kriegerowski, Hannes Vasyura-Bathke, Simon Daouts, Andreas Steinberg, Torsten Dahm<p>
+					<p class='subtitle'><b>Marius Isken</b>, Sebastian Heimann, Henriette Sudhaus, Marius Kriegerowski, Hannes Vasyura-Bathke, Simon Daouts, Andreas Steinberg, Torsten Dahm</p>
+					<p class='subtitle' style='font-style: italic; font-size: 50%;'>GFZ Potsdam, Carl-Christian-Albrecht University of Kiel, Potsdam University</p>
+					<p class='subtitle' style='color: white;'>Earthquake Research Institute, University of Tokyo - April 15. 2018</p>
 					<div class='logos'>
 						<img data-src='img/logos/gfz.svg'>
 						<img data-src='img/logos/cau.svg'>
@@ -303,35 +305,58 @@
 							<p>Earthquake source characterization</p>
 						</div>
 					</section>
-					<section class="white" data-background="#ffffff">
+					<section class="white" data-background="#fff">
 						<h2>Lassie</h2>
 						<p>The Earthquake Detector <img data-src="img/logos/lassie.svg" class="logo-inline" /></p>
 						<img data-src="img/lassie.png" style="box-shadow: none !important;" />
 						<span class="sub">Automatic event detection and location using full waveform stacks</span>
 					</section>
-					<section class="white" data-background="#ffffff">
+					<section class="white" data-background="#fff">
 						<h2>Grond</h2>
 						<p style="font-size: 80%">Bootstrap based probabilistic earthquake source inversion</p>
                         <img style="height: 475px;" data-src="img/grond.png">
-                        <p style="font-size: 80%; opacity: .75;">https://gitext.gfz-potsdam.de/heimann/grond/</p>
 					</section>
-					<section class="white" data-background="#ffffff">
+					<section class="white" data-background="#fff">
 						<h2>Grond</h2>
-						<p style="font-size: 80%">Bootstrap based probabilistic earthquake source inversion</p>
-                        <img style="height: 475px; box-shadow: none !important;" data-src="img/grond-sketch.png">
-                        <p style="font-size: 80%; opacity: .75;">https://gitext.gfz-potsdam.de/heimann/grond/</p>
+						<ul class="subtitled" style="padding-bottom: 100px;">
+							<li data-fragment-index="1">
+								Seismic Waveforms
+								<ul class="sublist">
+									<li>Time domain</li>
+									<li>Frequency domain</li>
+									<li>Amplitude matching</li>
+								</ul>
+							</li>
+							<li data-fragment-index="2">
+								Surface displacements
+								<ul class="sublist">
+									<li>GNSS surface observations</li>
+									<li>InSAR Line-of-Sight displacements</li>
+								</ul>
+							</li>
+							<li style="padding-top: 1em" data-fragment-index="3">
+								Source models
+								<ul class="sublist">
+									<li>Moment tensor</li>
+									<li>Finite rectangular plane</li>
+								</ul>
+							</li>
+						</ul>
+
+                        <img style="height: 400px; box-shadow: none !important;" data-src="img/grond-sketch.png">
 					</section>
-					<section class="white" data-background="#ffffff">
+					<section class="white" data-background="#fff">
+						<h2>Grond</h2>
+						<p style="font-size: 80%">2009 La'Acquila Earthquake - InSAR surface displacement</p>
+                        <img style="box-shadow: none !important; width: 100%;" data-src="img/grond-fits-satellite.png">
+                        <span class="sub">JAXA ALOS Descending surface displacement data.</span>
+					</section>
+
+					<section class="white" data-background="#fff">
 						<h2>BEAT <img data-src="img/logos/BEAT.svg" class="logo-inline"></h2>
 						<p>Bayesian Earthquake Analysis Tool</p>
 						<img data-src="img/BEAT_correlation.svg" style="height: 450px; box-shadow: none !important;" />
 						<p class="sub">Flexible multi-dataset deformation source optimization for extended sources, incorporating model uncertainties. - https://github.com/hvasbath/beat</p>
-					</section>
-					<section class="white" data-background="#ffffff">
-						<h2 style="font-size: 130%;">Static Displacement Modelling</h2>
-						<p>Talpa</p>
-						<img data-src="img/talpa-src_mod.gif" style="width: 700px; height: auto;" />
-						<p class="sub">Interactive static displacement modelling serving multiple backends.</p>
 					</section>
 <!-- 					<section data-background-image="img/surface-displacement-edited.png">
 						<div class="overl">
@@ -340,8 +365,22 @@
 						</div>
 						<span style="position: fixed; bottom: 10px; right: 10px; font-size: 50%">USGS, 2016</span>
 					</section> -->
+				</section>
+				<section>
+					<section data-background-image="img/rocket-start.jpg">  
+						<div class="overl">
+							<h2>InSAR Data</h2>
+							<p>Preparing unwrapped InSAR surface displacement data</p>
+						</div>
+					</section>
 					<section class="white" data-background="#fff">
-						<h2>KITE - InSAR Handling</h2>
+						<h2>Kite - InSAR Handling</h2>
+						<p style="font-size: 80%">
+							Problem: Swiftly and relaiably <b>measure uncertainties through variance and covariance</b> estimation.
+						</p>
+						<img style="box-shadow: none !important; height: 530px;" data-src="img/kite-container.png" data-fragment-index="2" />
+					</section>
+					<section class="white" data-background="#fff">
 						<div style="display: inline-flex; vertical-align: middle;">
 							<div class="insar">
 								<img class="insar" data-src="img/myanmar-full.png" />
@@ -352,6 +391,20 @@
 							</div>
 						</div>
 						<p class="sub" style="display: block;">Data reduction and noise estimation for satellite-borne displacement modelling.</p>
+					</section>
+					<section class="white" data-background="#fff">
+						<h2>Kite - InSAR Handling</h2>
+						<img style="box-shadow: none !important; height: 550px;" data-src="img/kite-quadtree.png" />
+					</section>
+					<section class="white" data-background="#fff">
+						<h2>Kite - InSAR Handling</h2>
+						<img style="box-shadow: none !important; height: 550px;" data-src="img/kite-noise.png" />
+					</section>
+					<section class="white" data-background="#fff">
+						<h2 style="font-size: 130%;">Static Displacement Modelling - Talpa</h2>
+						<p>Interactive static earthquake source modelling</p>
+						<img data-src="img/talpa-src_mod.gif" style="width: 700px; height: auto;" />
+						<p class="sub" style="opacity: .75;">Interactive static displacement modelling serving multiple backends.</p>
 					</section>
 					<!-- <section>
 						<h2>Noise Covariance Estimation</h2>

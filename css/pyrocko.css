@@ -132,3 +132,8 @@ div.velocity {
 section.white * {
   color: #111;
 }
+
+ul.sublist li {
+  font-size: 60%;
+  opacity: .75;
+}
