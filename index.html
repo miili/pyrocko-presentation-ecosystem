@@ -349,7 +349,7 @@
 						<h2>Grond</h2>
 						<p style="font-size: 80%">2009 La'Acquila Earthquake - InSAR surface displacement</p>
                         <img style="box-shadow: none !important; width: 100%;" data-src="img/grond-fits-satellite.png">
-                        <span class="sub">JAXA ALOS Descending surface displacement data.</span>
+                        <span class="sub">Envisat descending unwrapped surface displacement data.</span>
 					</section>
 
 					<section class="white" data-background="#fff">
@@ -373,6 +373,26 @@
 							<p>Preparing unwrapped InSAR surface displacement data</p>
 						</div>
 					</section>
+                    <section class="white" data-background="#fff">
+                        <img class="insar" data-src="img/myanmar-full.png" />
+                        <p class="sub">Data reduction of satellite-borne displacement data.</p>
+                    </section>
+                    <section class="white" data-background="#fff">
+                        <img class="insar" data-src="img/myanmar-quadtree.gif" />
+                        <p class="sub">Quadtree construction from satellite-borne displacement data.</p>
+                    </section>
+                    <section class="white" data-background="#fff">
+                        <img class="insar" data-src="img/myanmar-full-noise-square.png" />
+                        <p class="sub">Data noise estimation satellite-borne displacement data.</p>
+                    </section>
+                    <section class="white" data-background="#fff">
+                        <img class="insar" data-src="img/myanmar-full-noise.png" />
+                        <p class="sub">Data noise estimation satellite-borne displacement data.</p>
+                    </section>
+                    <section class="white" data-background="#fff">
+                        <img class="insar" data-src="img/myanmar-full-noise-covariance.png" />
+                        <p class="sub">Data noise estimation satellite-borne displacement data.</p>
+                    </section>
 					<section class="white" data-background="#fff">
 						<h2>Kite - InSAR Handling</h2>
 						<p style="font-size: 80%">
@@ -380,42 +400,29 @@
 						</p>
 						<img style="box-shadow: none !important; height: 530px;" data-src="img/kite-container.png" data-fragment-index="2" />
 					</section>
-					<section class="white" data-background="#fff">
-						<div style="display: inline-flex; vertical-align: middle;">
-							<div class="insar">
-								<img class="insar" data-src="img/myanmar-full.png" />
-							</div>
-							<div class="arrow-right"></div>
-							<div class="insar">
-								<img class="insar" data-src="img/myanmar-quadtree.gif" />
-							</div>
-						</div>
-						<p class="sub" style="display: block;">Data reduction and noise estimation for satellite-borne displacement modelling.</p>
-					</section>
-					<section class="white" data-background="#fff">
-						<h2>Kite - InSAR Handling</h2>
-						<img style="box-shadow: none !important; height: 550px;" data-src="img/kite-quadtree.png" />
-					</section>
-					<section class="white" data-background="#fff">
-						<h2>Kite - InSAR Handling</h2>
-						<img style="box-shadow: none !important; height: 550px;" data-src="img/kite-noise.png" />
-					</section>
-					<section class="white" data-background="#fff">
-						<h2 style="font-size: 130%;">Static Displacement Modelling - Talpa</h2>
-						<p>Interactive static earthquake source modelling</p>
-						<img data-src="img/talpa-src_mod.gif" style="width: 700px; height: auto;" />
-						<p class="sub" style="opacity: .75;">Interactive static displacement modelling serving multiple backends.</p>
-					</section>
-					<!-- <section>
-						<h2>Noise Covariance Estimation</h2>
-						<div style="display: inline-flex; vertical-align: middle;">
-							<div class="insar-covariance">
-								<img class="insar" data-src="img/myanmar-noise.png"/>
-							</div>
-							<div class="arrow-right"></div>
-							<div class="insar-covariance">
-								<img class="insar" data-src="img/myanmar-powerspec.svg" />
-							</div>
+                    <section class="white" data-background="#fff">
+                        <h2>Kite - InSAR Handling</h2>
+                        <img style="box-shadow: none !important; height: 550px;" data-src="img/kite-noise.png" />
+                    </section>
+                    <section class="white" data-background="#fff">
+                        <h2>Kite - InSAR Handling</h2>
+                        <img style="box-shadow: none !important; height: 550px;" data-src="img/kite-quadtree.png" />
+                    </section>
+                    <section class="white" data-background="#fff">
+                        <h2 style="font-size: 130%;">Talpa - Static Displacement Modelling</h2>
+                        <p>Interactive static earthquake source modelling</p>
+                        <img data-src="img/talpa-src_mod.gif" style="width: 870px; height: auto;" />
+                    </section>
+                    <!-- <section>
+                        <h2>Noise Covariance Estimation</h2>
+                        <div style="display: inline-flex; vertical-align: middle;">
+                            <div class="insar-covariance">
+                                <img class="insar" data-src="img/myanmar-noise.png"/>
+                            </div>
+                            <div class="arrow-right"></div>
+                            <div class="insar-covariance">
+                                <img class="insar" data-src="img/myanmar-powerspec.svg" />
+                            </div>
 							<div class="arrow-right"></div>
 							<div class="insar-covariance">
 								<img class="insar" data-src="img/myanmar-covariance.svg" />
