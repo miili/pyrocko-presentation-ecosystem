@@ -369,45 +369,73 @@
 				<section>
 					<section data-background-image="img/rocket-start.jpg">  
 						<div class="overl">
-							<h2>InSAR Data</h2>
+							<h2>InSAR Data Handling</h2>
 							<p>Preparing unwrapped InSAR surface displacement data</p>
 						</div>
 					</section>
                     <section class="white" data-background="#fff">
                         <img class="insar" data-src="img/myanmar-full.png" />
-                        <p class="sub">Data reduction of satellite-borne displacement data.</p>
+                        <p class="sub is-large">Data reduction of satellite-borne displacement data.</p>
                     </section>
                     <section class="white" data-background="#fff">
                         <img class="insar" data-src="img/myanmar-quadtree.gif" />
-                        <p class="sub">Quadtree construction from satellite-borne displacement data.</p>
+                        <p class="sub is-large">Spatial data is reduced by quadtree construction.</p>
                     </section>
                     <section class="white" data-background="#fff">
                         <img class="insar" data-src="img/myanmar-full-noise-square.png" />
-                        <p class="sub">Data noise estimation satellite-borne displacement data.</p>
+                        <p class="sub is-large">Noise from topography, athmosphere, ionosphere, instrument ...</p>
                     </section>
                     <section class="white" data-background="#fff">
                         <img class="insar" data-src="img/myanmar-full-noise.png" />
-                        <p class="sub">Data noise estimation satellite-borne displacement data.</p>
+                        <p class="sub is-large">Noise from topography, athmosphere, ionosphere, instrument ...</p>
                     </section>
                     <section class="white" data-background="#fff">
                         <img class="insar" data-src="img/myanmar-full-noise-covariance.png" />
-                        <p class="sub">Data noise estimation satellite-borne displacement data.</p>
+                        <p class="sub is-large">Estimation of spatial data covariance.</p>
                     </section>
 					<section class="white" data-background="#fff">
 						<h2>Kite - InSAR Handling</h2>
 						<p style="font-size: 80%">
-							Problem: Swiftly and relaiably <b>measure uncertainties through variance and covariance</b> estimation.
+							Problem: Swiftly and relaiably <b>measure uncertainties through variance and covariance</b> analysis for <b>source inversion</b>.
 						</p>
 						<img style="box-shadow: none !important; height: 530px;" data-src="img/kite-container.png" data-fragment-index="2" />
 					</section>
                     <section class="white" data-background="#fff">
                         <h2>Kite - InSAR Handling</h2>
-                        <img style="box-shadow: none !important; height: 550px;" data-src="img/kite-noise.png" />
+                        <img style="box-shadow: none !important; height: 600px;" data-src="img/kite-noise.png" />
                     </section>
                     <section class="white" data-background="#fff">
                         <h2>Kite - InSAR Handling</h2>
-                        <img style="box-shadow: none !important; height: 550px;" data-src="img/kite-quadtree.png" />
+                        <img style="box-shadow: none !important; height: 600px;" data-src="img/kite-quadtree.png" />
                     </section>
+                </section>
+
+                <section>
+                	<section data-background-image="img/new-zealand-rupture.jpg">  
+                		<div class="overl">
+                			<h2>Static Displacement Modelling</h2>
+                			<p>From the model to the eye</p>
+                		</div>
+                	</section>
+
+                	<section>
+                	    <h2 style="font-size: 130%;">Modelling Sandbox for Static Displacement Sources</h2>
+                	    <pre><code class="python" data-trim>
+                	    	sandbox = Sandbox()
+                	    	sandbox.add(Okada(
+	                	    	strike=23., rake=93., depth=32*km, ...)))
+
+                	    	sandbox.add(PyrockoRectangular(
+	                	    	strike=12., rake=94., depth=32*km, ...)))
+
+                	    	sandbox.add(CompundDislocation(
+	                	    	length_x=20., length_y=93., length_z=32., ...))
+                	    </code></pre>
+                	    <p class="sub is-large">
+                	    	The unified sandbox handles analytical and numerical displacement source models.
+                	    </p>
+                	</section>
+
                     <section class="white" data-background="#fff">
                         <h2 style="font-size: 130%;">Talpa - Static Displacement Modelling</h2>
                         <p>Interactive static earthquake source modelling</p>
@@ -461,9 +489,6 @@
 					<section class="white" data-background="#fff">
 						<h2>Level-1 Data Tracks</h2>
 						<div>
-							<p>
-								
-							</p>
 							<div>
 								<img style="box-shadow: none !important; height: 600px;" data-src='img/month_tracks.png' />
 							</div>
@@ -473,9 +498,6 @@
 					<section class="white" data-background="#fff">
 						<h2>2010 Maule Earthquake</h2>
 						<div>
-							<p>
-								
-							</p>
 							<div>
 								<img style="box-shadow: none !important; height: 600px;" data-src='img/2010-maule.png' />
 							</div>

@@ -137,3 +137,8 @@ ul.sublist li {
   font-size: 60%;
   opacity: .75;
 }
+
+
+.is-large {
+  font-size: 24pt !important;
+}
